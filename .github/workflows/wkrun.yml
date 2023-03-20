@@ -9,5 +9,9 @@ jobs:
   on-success:
     runs-on: ubuntu-latest
     steps:
+      - uses: wechuli/actionsutils@v1.1.0
+        with:
+          tasks: 'context'
+          create-artifact: true
       - run: echo "${{ toJSON(github.event) }}"
       - run: echo "${{ toJSON(github.event.workflow_run) }}"
