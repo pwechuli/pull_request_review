@@ -9,7 +9,7 @@ jobs:
   on-success:
     runs-on: ubuntu-latest
     steps:
-      - uses: wechuli/actionsutils@v1.1.0
+      - uses: wechuli/actionsutils@main
         with:
           tasks: 'context'
           create-artifact: true
